@@ -6,9 +6,9 @@ export default function DateRange() {
     const [final, setFinal] = useState("");
 
     return (
-        <div>
+        <form className="box flex" onSubmit={(e) => e.preventDefault()}>
             <DateInput label="inicio" value={inicio} onChange={({ target }) => setInicio(target.value)} />
             <DateInput label="final" value={final} onChange={({ target }) => setFinal(target.value)} />
-        </div>
+        </form>
     );
 }
