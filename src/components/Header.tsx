@@ -1,9 +1,13 @@
-import { useData } from "../context/Hooks/useData.hook";
+import DateRange from "./Date-range";
+import Meses from "./Meses";
 
 export default function Header() {
-    const { data } = useData();
-
-    console.log(data);
-
-    return <div>Header</div>;
+    return (
+        <header className="mb">
+            <div className="mb">
+                <DateRange />
+            </div>
+            <Meses />
+        </header>
+    );
 }

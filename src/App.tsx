@@ -4,8 +4,6 @@ import Resumo from "./pages/Resumo";
 import "./index.css";
 import { DataContextProvider } from "./context/Data-context";
 
-import DateRange from "./components/Date-range";
-
 function App() {
     return (
         <DataContextProvider>
@@ -13,7 +11,6 @@ function App() {
                 <SideNav />
                 <main>
                     <Header />
-                    <DateRange />
                     <Resumo />
                 </main>
             </div>
