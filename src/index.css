@@ -99,6 +99,12 @@ ul {
   padding: var(--gap-s);
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .sidenav li:hover span {
   background-color: var(--color-3);
 }
