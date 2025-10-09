@@ -1,3 +1,4 @@
+import GraficoVendas from "../components/GraficoVendas";
 import { useData } from "../context/Hooks/useData.hook";
 
 export default function Resumo() {
@@ -36,7 +37,9 @@ export default function Resumo() {
                     </span>
                 </div>
             </div>
-            <div className="box mb">Graficos</div>
+            <div className="box mb">
+                <GraficoVendas data={data} />
+            </div>
         </section>
     );
 }
